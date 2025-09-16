@@ -1,5 +1,4 @@
-# target_dpo Setup & Data Format
-This repo offers an implementation for our paper "Teaching Your Models to Understand Code via Focal Preference Alignment" (EMNLP 2025 Main Conference).
+## This repo offers an implementation for our paper "Teaching Your Models to Understand Code via Focal Preference Alignment" (EMNLP 2025 Main Conference).
 
 ## Environment Setup
 ```bash
