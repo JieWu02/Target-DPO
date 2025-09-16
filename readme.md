@@ -1,4 +1,4 @@
-## This repo offers an implementation for our paper "Teaching Your Models to Understand Code via Focal Preference Alignment" (EMNLP 2025 Main Conference).
+### This repo offers an implementation for our paper "Teaching Your Models to Understand Code via Focal Preference Alignment" (EMNLP 2025 Main Conference).
 
 ## Environment Setup
 ```bash
@@ -32,7 +32,7 @@ An entry in the input JSON includes the `prompt`, `chosen`, and `rejected` keys,
     "rejected": "```python\n# evaluate_expressions.py\nimport csv\nimport math\n\ndef evaluate_expressions_from_csv(file_path: str) -> list:\n    results = []\n    \n    with open(file_path, 'r') as file:\n        reader = csv.reader(file)\n        next(reader)  # Skip the header\n        \n        for row in reader:\n            expression = row[0]\n            try:\n                # Safely evaluate the expression\n                result = eval(expression, {\"__builtins__\": None}, {\"sqrt\": math.sqrt})\n                results.append(float(result))\n            except ZeroDivisionError:\n                results.append(\"Error: Division by zero\")\n            except (SyntaxError, NameError):\n                results.append(\"Error: Invalid expression\")\n            except Exception as e:\n                results.append(f\"Error: {str(e)}\")\n    \n    return results\n\n# Test case generation\nif __name__ == \"__main__\":\n    # Generating a test CSV file for demonstration purposes\n    test_csv_content = \"\"\"expression\n\"2+3*5\"\n\"10/0\"\n\"(4+5)*7\"\n\"sqrt(16)\"\n\"invalid_expression\"\n\"\"\"\n    test_file_path = 'test_expressions.csv'\n    with open(test_file_path, 'w') as file:\n        file.write(test_csv_content)\n    \n    # Running the function and printing the results\n    results = evaluate_expressions_from_csv(test_file_path)\n    print(results)\n```"
 }
 ```
-
+Contact wujie24@mails.tsinghua.edu.cn for any question. If you find this repo helpful, please kindly cite us.
 ## Citation
 ```bibtex
 @misc{wu2025iterpreffocalpreferencelearning,
