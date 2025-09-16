@@ -45,3 +45,7 @@ Contact wujie24@mails.tsinghua.edu.cn for any question. If you find this repo he
       url={https://arxiv.org/abs/2503.02783}, 
 }
 ```
+
+## Great thanks to
+- [Hugging Face TRL](https://github.com/huggingface/trl)  
+- [Hugging Face Alignment Handbook](https://github.com/huggingface/alignment-handbook)
