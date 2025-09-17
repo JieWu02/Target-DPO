@@ -35,8 +35,8 @@ An entry in the input JSON includes the `prompt`, `chosen`, and `rejected` keys,
 Contact wujie24@mails.tsinghua.edu.cn for any question. If you find this repo helpful, please kindly cite us.
 ## Citation
 ```bibtex
-@misc{wu2025iterpreffocalpreferencelearning,
-      title={IterPref: Focal Preference Learning for Code Generation via Iterative Debugging}, 
+@misc{wu2025teachingmodelsunderstandcode,
+      title={Teaching Your Models to Understand Code via Focal Preference Alignment}, 
       author={Jie Wu and Haoling Li and Xin Zhang and Jianwen Luo and Yangyu Huang and Ruihang Chu and Yujiu Yang and Scarlett Li},
       year={2025},
       eprint={2503.02783},
